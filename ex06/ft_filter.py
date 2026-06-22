@@ -16,7 +16,9 @@ def ft_filter(function, iterable):
     """
 
     try:
-        assert callable(function) or function is None, "function is not callable or is None"
+        assert callable(function) or function is None, (
+            "function is not callable or is None"
+        )
         assert iterable is not None, "iterable is None"
         assert hasattr(iterable, "__iter__"), "iterable is not iterable"
     except AssertionError as e:

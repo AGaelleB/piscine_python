@@ -1,0 +1,4 @@
+enlever le tester avant de push
+clean les programmes
+
+tester la norme :

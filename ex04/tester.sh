@@ -24,7 +24,6 @@ echo "$ python whatis.py 13 5"
 python3 whatis.py 13 5
 echo ""
 
-🚀
 echo "$ python whatis.py 3.14"
 python3 whatis.py 3.14
 echo ""
@@ -55,4 +54,12 @@ echo ""
 
 echo "$ python whatis.py 9999999999999999999999999"
 python3 whatis.py 9999999999999999999999999
+echo ""
+
+echo "$ python whatis.py 2147483647"
+python3 whatis.py 2147483647
+echo ""
+
+echo "$ python whatis.py 2147483648"
+python3 whatis.py 2147483648
 echo ""
