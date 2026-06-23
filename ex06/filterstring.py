@@ -3,6 +3,7 @@ from ft_filter import ft_filter
 
 
 def main():
+    """Print words from sys.argv[1] longer than sys.argv[2] characters."""
     try:
         assert len(sys.argv) == 3, "the arguments are bad"
         int_value = int(sys.argv[2])
@@ -16,7 +17,8 @@ def main():
     string_value = sys.argv[1]
     tokenized_string = string_value.split()
 
-    res = list(ft_filter(lambda x: len(x) > int_value, tokenized_string))
+    filtered = ft_filter(lambda x: len(x) > int_value, tokenized_string)
+    res = [word for word in filtered]
     print(res)
 
 
